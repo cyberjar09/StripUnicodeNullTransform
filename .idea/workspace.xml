@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2cca2d8-6017-4900-a921-5eb50a0ff60f" name="Changes" comment="">
+    <list default="true" id="e2cca2d8-6017-4900-a921-5eb50a0ff60f" name="Changes" comment="Initial commit from our source">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/cyberjar09/strip_unicode_null_transform/StripUnicodeNullTransform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/cyberjar09/strip_unicode_null_transform/StripUnicodeNullTransform.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/cyberjar09/strip_unicode_null_transform/StripUnicodeNullTransformTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/github/cyberjar09/strip_unicode_null_transform/StripUnicodeNullTransformTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,17 +21,15 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
   </component>
   <component name="ProjectId" id="2NGhgnalI2ooWe8Rh9jOrtAdg6G" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -48,6 +44,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "for__pull",
     "last_opened_file_path": "/Users/rudy/dev/personal/StripUnicodeNullTransform",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -65,7 +62,7 @@
       <recent name="$PROJECT_DIR$/src/test/java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StripUnicodeNullTransformTest">
+  <component name="RunManager">
     <configuration name="StripUnicodeNullTransformTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="StripUnicodeNullTransform" />
       <extension name="coverage">
@@ -76,39 +73,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="io.github.cyberjar09.strip_unicode_null_transform" />
       <option name="MAIN_CLASS_NAME" value="io.github.cyberjar09.strip_unicode_null_transform.StripUnicodeNullTransformTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StripUnicodeNullTransformTest.testTransformWithAllFields" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="StripUnicodeNullTransform" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.github.cyberjar09.strip_unicode_null_transform.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="io.github.cyberjar09.strip_unicode_null_transform" />
-      <option name="MAIN_CLASS_NAME" value="io.github.cyberjar09.strip_unicode_null_transform.StripUnicodeNullTransformTest" />
-      <option name="METHOD_NAME" value="testTransformWithAllFields" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StripUnicodeNullTransformTest.testTransformWithSelectedFields" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="StripUnicodeNullTransform" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.github.cyberjar09.strip_unicode_null_transform.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="io.github.cyberjar09.strip_unicode_null_transform" />
-      <option name="MAIN_CLASS_NAME" value="io.github.cyberjar09.strip_unicode_null_transform.StripUnicodeNullTransformTest" />
-      <option name="METHOD_NAME" value="testTransformWithSelectedFields" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -116,8 +82,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.StripUnicodeNullTransformTest" />
-        <item itemvalue="JUnit.StripUnicodeNullTransformTest.testTransformWithAllFields" />
-        <item itemvalue="JUnit.StripUnicodeNullTransformTest.testTransformWithSelectedFields" />
       </list>
     </recent_temporary>
   </component>
@@ -131,6 +95,8 @@
       <updated>1679296447009</updated>
       <workItem from="1679296448298" duration="3018000" />
       <workItem from="1679386660911" duration="1788000" />
+      <workItem from="1683273509083" duration="17000" />
+      <workItem from="1683273536219" duration="1855000" />
     </task>
     <task id="LOCAL-00001" summary="add .idea folder to gitignore">
       <created>1679299329059</created>
@@ -147,17 +113,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add .idea folder to gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="add .idea folder to gitignore" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/io/github/cyberjar09/strip_unicode_null_transform/StripUnicodeNullTransformTest.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Initial commit from our source" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit from our source" />
   </component>
 </project>
