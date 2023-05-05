@@ -6,7 +6,21 @@
 
     <groupId>io.github.cyberjar09.strip_unicode_null_transform</groupId>
     <artifactId>StripUnicodeNullTransform</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3-SNAPSHOT</version>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://mit-license.org/</url>
+        </license>
+    </licenses>
+    <scm>
+        <url>https://github.com/roadSurfer/StripUnicodeNullTransform</url>
+    </scm>
+    <issueManagement>
+        <system>GitHub Issues</system>
+        <url>https://github.com/roadSurfer/StripUnicodeNullTransform/issues</url>
+    </issueManagement>
 
     <properties>
         <maven.compiler.source>16</maven.compiler.source>
