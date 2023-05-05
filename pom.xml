@@ -15,11 +15,11 @@
         </license>
     </licenses>
     <scm>
-        <url>https://github.com/roadSurfer/StripUnicodeNullTransform</url>
+        <url>https://github.com/cyberjar09/StripUnicodeNullTransform</url>
     </scm>
     <issueManagement>
         <system>GitHub Issues</system>
-        <url>https://github.com/roadSurfer/StripUnicodeNullTransform/issues</url>
+        <url>https://github.com/cyberjar09/StripUnicodeNullTransform/issues</url>
     </issueManagement>
 
     <properties>
