@@ -1,21 +1,68 @@
-# README
+# Kafka SMT - String Unicode Null
 
-custom Single Message Transform that replaces all occurrences of the Unicode character `\u0000` (or its equivalent in hexadecimal, `\0x00`) with nothing in the specified fields of a Struct record
+This SMT (Single Message Transform) can be configured to replace a target character (default: `null`, `\u0000`) in a
+message with another (default: empty string) in a specified topic (default: all) and specified fields (default: all).
 
-This implementation takes a configuration parameter called `fields` which is a comma-separated list of field names to strip null characters from. If no value is provided, then all fields will be processed.
+## Usage
 
-To use this transform in a Kafka Connect sink connector, you can specify the transforms and `transforms.stripNullChars.type` properties in the connector configuration file, like so:
+You will need to package the `StripUnicodeNullTransform` class and all its dependencies into a JAR file and add it to 
+the Kafka Connect worker's classpath.
 
+* topic - A specific topic to process. Default: all
+* fields - A comma separated list of fields to process. Default: all
+* target - The character to replace. Default: `null`, `\u0000`
+* replacement - The character to replace with. Default: empty string
+```json
+{
+    "name": "example-1",
+    "config": 
+    {
+        "transforms": "replace",
+        "transforms.replace.type": "io.github.cyberjar09.strip_unicode_null_transform.StripUnicodeNullTransform",
+        "transforms.replace.topic": "topicA",
+        "transforms.replace.fields": "fieldB,fieldC"
+    }
+}
 ```
-transforms=stripNullChars
-transforms.stripNullChars.type=io.github.cyberjar09.strip_unicode_null_transform.StripUnicodeNullTransform
-transforms.stripNullChars.fields=field1,field2
+
+To process multiple topics, register more than one instance of the SMT:
+```json
+{
+    "name": "example-2",
+    "config": 
+    {
+        "transforms": "replaceA,replaceD",
+        "transforms.replaceA.type": "io.github.cyberjar09.strip_unicode_null_transform.StripUnicodeNullTransform",
+        "transforms.replaceA.topic": "topicA",
+        "transforms.replaceA.fields": "fieldB,fieldC",
+        "transforms.replaceD.type": "io.github.cyberjar09.strip_unicode_null_transform.StripUnicodeNullTransform",
+        "transforms.replaceD.topic": "topicD",
+        "transforms.replaceD.fields": "fieldE,fieldF"
+    }
+}
 ```
-In this example, the transform will only strip null characters from the `field1` and `field2` fields of the Struct record. 
-If the fields property is not specified or is set to the default value of *, then all fields will be processed.
-Regex is not currently supported (PR welcome)
 
-Note that you will need to package the `StripUnicodeNullTransform` class and its dependencies into a JAR file and add it to the Kafka Connect worker's classpath.
+### Logging
 
-### To create JAR
-`mvn clean install`
+The logging level can be set in the usual manner by access the Kafka Connect API. For example:
+```shell
+curl -s -X PUT -H "Content-Type:application/json" \
+    http://KAFKA-CONNECT:PORT/admin/loggers/io.github.cyberjar09.strip_unicode_null_transform.StripUnicodeNullTransform \
+    -d '{"level": "TRACE"}'
+```
+
+## Building
+
+This can be quickly built and tested using Maven as normal:
+```shell
+mvn clean install
+````
+
+## Performance
+
+Initial load testing with 400k records on a CPU-bound system showed an approximate increase of 15% in processing time
+when the SMT is left to process **all** fields in **all** topics. Further testing on a more production capable system 
+with 4 million records showed a 2-3% hit.
+
+If performance is a critical concern,  it is advised that the SMT is configured to target only the affected fields of 
+problem topics.

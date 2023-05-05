@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2cca2d8-6017-4900-a921-5eb50a0ff60f" name="Changes" comment="">
+    <list default="true" id="e2cca2d8-6017-4900-a921-5eb50a0ff60f" name="Changes" comment="Initial commit from our source">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/cyberjar09/strip_unicode_null_transform/StripUnicodeNullTransform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/cyberjar09/strip_unicode_null_transform/StripUnicodeNullTransform.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/io/github/cyberjar09/strip_unicode_null_transform/StripUnicodeNullTransformTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/github/cyberjar09/strip_unicode_null_transform/StripUnicodeNullTransformTest.java" afterDir="false" />
@@ -23,17 +25,15 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
   </component>
   <component name="ProjectId" id="2NGhgnalI2ooWe8Rh9jOrtAdg6G" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -48,6 +48,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "initial__commit",
     "last_opened_file_path": "/Users/rudy/dev/personal/StripUnicodeNullTransform",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -131,6 +132,8 @@
       <updated>1679296447009</updated>
       <workItem from="1679296448298" duration="3018000" />
       <workItem from="1679386660911" duration="1788000" />
+      <workItem from="1683273509083" duration="17000" />
+      <workItem from="1683273536219" duration="1855000" />
     </task>
     <task id="LOCAL-00001" summary="add .idea folder to gitignore">
       <created>1679299329059</created>
@@ -147,17 +150,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add .idea folder to gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="add .idea folder to gitignore" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/io/github/cyberjar09/strip_unicode_null_transform/StripUnicodeNullTransformTest.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Initial commit from our source" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit from our source" />
   </component>
 </project>
